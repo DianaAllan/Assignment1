@@ -4,140 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#020202"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/start"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:backgroundTint="#2E7D32"
-        android:text="START!"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+
+    <ImageView
+
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="151dp"
+        android:background="#090909"
+        android:src="@drawable/img"
+        app:layout_constraintBottom_toTopOf="@+id/AppName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ProgressBar
-        android:id="@+id/timer"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:progress="45"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_editor_absoluteY="16dp" />
-
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/AppName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="0 Sec"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/timer" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="0 Points"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-         app:layout_constraintTop_toBottomOf="@id/timer"/>
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=" Question "
-        android:textColor="#090909"
-        android:textStyle="bold"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/textView3"
-        app:layout_constraintStart_toEndOf="@+id/textView1"
-        app:layout_constraintTop_toBottomOf="@id/timer"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <TableLayout
-        android:id="@+id/tableLayout"
-        android:layout_width="411dp"
-        android:layout_height="575dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <Button
-                android:id="@+id/A"
-                android:layout_width="195dp"
-                android:layout_height="270dp"
-                android:layout_margin="5dp"
-                android:text="A"
-                android:textSize="22sp"
-                android:textStyle="bold"
-                app:backgroundTint="#FA76978C" />
-
-            <Button
-                android:id="@+id/B"
-                android:layout_width="195dp"
-                android:layout_height="270dp"
-                android:layout_margin="4dp"
-                android:text="B"
-                android:textSize="22sp"
-                android:textStyle="bold"
-                app:backgroundTint="#CD76978C" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <Button
-                android:id="@+id/C"
-                android:layout_width="195dp"
-                android:layout_height="270dp"
-                android:layout_margin="5dp"
-                android:text="C"
-                android:textSize="22sp"
-                android:textStyle="bold"
-                app:backgroundTint="#9C76978C" />
-
-            <Button
-                android:id="@+id/D"
-                android:layout_width="195dp"
-                android:layout_height="270dp"
-                android:layout_margin="5dp"
-                android:text="D"
-                android:textSize="22sp"
-                android:textStyle="bold"
-                app:backgroundTint="#6176978C" />
-        </TableRow>
-
-    </TableLayout>
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="23dp"
-        android:layout_marginBottom="10dp"
-        android:text="Click START!"
-        android:textColor="#2E2A2A"
-        android:textSize="22sp"
-        android:textStyle="bold"
+        android:layout_marginBottom="151dp"
+        android:text="Assignment2"
+        android:textColor="#FBFAFA"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
-        app:layout_constraintVertical_bias="0.0" />
-
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
